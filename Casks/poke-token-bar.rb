@@ -1,0 +1,29 @@
+cask "poke-token-bar" do
+  version "1.0.0"
+  sha256 :no_check
+
+  url "https://github.com/chattymin/poke-token-bar/releases/download/v#{version}/PokeTokenBar.zip"
+  name "PokeTokenBar"
+  desc "Menu bar app turning AI coding token usage into a growing Pokemon"
+  homepage "https://github.com/chattymin/poke-token-bar"
+
+  app "PokeTokenBar.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/PokeTokenBar.app"],
+                   sudo: false
+  end
+
+  caveats <<~EOS
+    PokeTokenBar requires the `ccusage` CLI on your PATH:
+      npm install -g ccusage
+    Optionally install `ccusage-codex` to also track Codex usage.
+  EOS
+
+  zap trash: [
+    "~/Library/Application Support/PokeTokenBar",
+    "~/Library/Preferences/io.github.chattymin.poketokenbar.plist",
+    "~/Library/Logs/PokeTokenBar.log",
+  ]
+end
