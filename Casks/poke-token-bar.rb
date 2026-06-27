@@ -1,11 +1,11 @@
 cask "poke-token-bar" do
-  version "2.0.1"
+  version "2.0.2"
   sha256 :no_check
 
-  url "https://github.com/chattymin/poke-token-bar/releases/download/v#{version}/PokeTokenBar.zip"
+  url "https://github.com/chattymin/PokeTokenBar/releases/download/v#{version}/PokeTokenBar.zip"
   name "PokeTokenBar"
   desc "Menu bar app turning AI coding token usage into a growing Pokemon"
-  homepage "https://github.com/chattymin/poke-token-bar"
+  homepage "https://github.com/chattymin/PokeTokenBar"
 
   app "PokeTokenBar.app"
 
