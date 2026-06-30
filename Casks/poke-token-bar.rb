@@ -1,5 +1,5 @@
 cask "poke-token-bar" do
-  version "2.0.4"
+  version "2.1.0"
   sha256 :no_check
 
   url "https://github.com/chattymin/PokeTokenBar/releases/download/v#{version}/PokeTokenBar.zip"
@@ -15,11 +15,6 @@ cask "poke-token-bar" do
                    sudo: false
   end
 
-  caveats <<~EOS
-    PokeTokenBar requires the `ccusage` CLI on your PATH:
-      npm install -g ccusage
-    Optionally install `ccusage-codex` to also track Codex usage.
-  EOS
 
   zap trash: [
     "~/Library/Application Support/PokeTokenBar",
