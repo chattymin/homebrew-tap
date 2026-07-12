@@ -20,5 +20,8 @@ cask "poke-token-bar" do
     "~/Library/Application Support/PokeTokenBar",
     "~/Library/Preferences/io.github.chattymin.poketokenbar.plist",
     "~/Library/Logs/PokeTokenBar.log",
+    "~/Library/Logs/PokeTokenBar.old.log",
+    "~/Library/Logs/PokeTokenBar.crash.log",
+    "~/Library/Logs/PokeTokenBar.running",
   ]
 end
