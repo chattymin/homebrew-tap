@@ -1,5 +1,5 @@
 cask "poke-token-bar" do
-  version "2.3.5"
+  version "2.3.6"
   sha256 :no_check
 
   url "https://github.com/chattymin/PokeTokenBar/releases/download/v#{version}/PokeTokenBar.zip"
