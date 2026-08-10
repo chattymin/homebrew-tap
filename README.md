@@ -11,3 +11,13 @@ brew install --cask chattymin/tap/poke-token-bar
 ```
 
 요구사항: `ccusage` CLI (`npm install -g ccusage`). 소스: https://github.com/chattymin/poke-token-bar
+
+## Bobber
+
+MacBook 노치 위에 고양이가 앉아 낚시를 한다. 무엇이 잡히는지는 지금 바깥 날씨가 정한다.
+
+```bash
+brew install --cask chattymin/tap/bobber
+```
+
+요구사항: macOS 14 이상. 소스는 아직 비공개다.
