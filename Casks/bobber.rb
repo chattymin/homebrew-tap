@@ -1,6 +1,6 @@
 cask "bobber" do
   version "0.1.1"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "5855360a9b6ad3193b56763740b14b65156183205c5286ada58be423b4bcae25"
 
   # 소스 레포(chattymin/Bobber)는 private이라 그쪽 릴리스 asset은 익명 접근에 404다.
   # 배포용 zip은 이 tap 레포의 `bobber-vX.Y.Z` 릴리스에 올린다.
