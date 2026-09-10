@@ -9,7 +9,7 @@ cask "poke-token-bar" do
 
   app "PokeTokenBar.app"
 
-  postflight do
+  postflight_steps do
     system_command "/usr/bin/xattr",
                    args: ["-cr", "#{appdir}/PokeTokenBar.app"],
                    sudo: false
