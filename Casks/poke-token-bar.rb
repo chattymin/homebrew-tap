@@ -9,12 +9,11 @@ cask "poke-token-bar" do
 
   app "PokeTokenBar.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/PokeTokenBar.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-cr", "{{appdir}}/PokeTokenBar.app"],
+        sudo: false
   end
-
 
   zap trash: [
     "~/Library/Application Support/PokeTokenBar",
